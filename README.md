@@ -74,7 +74,7 @@ december_prcp_list_df.describe()
 
 By looking at the data, we can see we have more measurements for June. Also, we can see the mean precipitation for December is higher than (mean) precipitation in June. This, combined with the "cold" weather can reduce the number of visitors to our shop.
 
-The way to get the same data using "standard SQL", is as follows (please note we are not adding any loginc to add this data into a DataFrame. We are just demostrating how to get this using a simple SQL query):
+The way to get the same data using "standard SQL", is as follows (please note we are not adding any logic to add this data into a DataFrame. We are just demostrating how to get this using a simple SQL query. Creation of DataFrame and getting the basic statistics would be very much the same):
 
 ```
 import sqlite3
