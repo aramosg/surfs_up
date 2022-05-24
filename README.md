@@ -42,7 +42,7 @@ As a conclusion, I keep holding my assertion: Temperature observations are not e
 1. Precipitacion data
 Let's quickly review precipitation data for June and December. To get the following data (see the screenshots below, we used the following code):
 
-'''
+```
 june_results_prcp = session.query(Measurement.date, Measurement.prcp).\
 filter(extract('month',Measurement.date) == 6).all()
 
@@ -62,7 +62,7 @@ for item in december_results_prcp:
     
 december_prcp_list_df = pd.DataFrame(december_prcp_list, columns=['december_prcp'])
 december_prcp_list_df.describe()
-'''
+```
 
 **Precipitation for June**
 
@@ -76,7 +76,7 @@ By looking at the data, we can see we have more measurements for June. Also, we 
 
 The way to get the same data using "standard SQL", is as follows (please note we are not adding any loginc to add this data into a DataFrame. We are just demostrating how to get this using a simple SQL query):
 
-'''
+```
 import sqlite3
 con = sqlite3.connect('hawaii.sqlite')
 cur = con.cursor()
@@ -88,7 +88,7 @@ print("----------------")
         
 for row in cur.execute('SELECT prcp FROM Measurement where substr(date, 6,2) == \'06\' limit 20'):
         print(row)
-'''
+```
 
 ### Future efforts
 As stated before, we can also look for data on:
