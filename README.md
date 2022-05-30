@@ -96,9 +96,4 @@ As stated before, we can also look for data on:
 2. Tourists influx
 3. Volcano activity
 
-Getting these data would are more variables into our analysis. It think it is important to consider al natural phenomenons, not only temperature and precipitation. Also, by analyzing the influx of tourists, we can discover where are we getting more visitors form, and the reason why they are so fond of Hawaii.
-
-
-
-
- 
+Getting these data would are more variables into our analysis. It think it is important to consider al natural phenomenons, not only temperature and precipitation. Also, by analyzing the influx of tourists, we can discover where are we getting more visitors form, and the reason why they are so fond of Hawaii. 
